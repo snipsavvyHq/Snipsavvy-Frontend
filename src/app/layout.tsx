@@ -3,6 +3,9 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Head from "next/head";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -41,6 +44,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </div>
         </div>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
