@@ -281,7 +281,7 @@ const Sidebar = () => {
                       handleRightClick(e, i, workspace, "owns")
                     }
                     key={workspace._id}
-                    className="h-14 w-14 m-4 rounded-xl cursor-pointer hover:border-4 flex items-center justify-center"
+                    className="tour-workspace-actions h-14 w-14 m-4 rounded-xl cursor-pointer hover:border-4 flex items-center justify-center"
                     style={{
                       backgroundColor: colorOptions[i % 6],
                       boxShadow: "1px 1px 3px 1px #0a0a0aad",
@@ -383,7 +383,7 @@ const Sidebar = () => {
             <li className="mb-4">
               <CiSettings
                 onClick={() => setIsSettingsModalOpen(true)}
-                className="text-white text-3xl cursor-pointer"
+                className="tour-settings text-white text-3xl cursor-pointer"
               />
             </li>
             <Avatar

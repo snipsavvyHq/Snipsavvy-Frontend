@@ -67,6 +67,19 @@ export default function SettingsModal({ open, setOpen }: SettingsModalProps) {
                 <PlugIcon className="h-5 w-5 mr-3 opacity-50" />
                 <span>Integrations</span>
               </div>
+              <span className="text-lg font-semibold mt-6 mb-4">
+                Help & Support
+              </span>
+              <div 
+                className="flex items-center mb-4 cursor-pointer hover:text-blue-400 transition-colors"
+                onClick={() => {
+                  localStorage.removeItem('hasSeenTour');
+                  window.location.reload();
+                }}
+              >
+                <PlayIcon className="h-5 w-5 mr-3" />
+                <span>Restart Tour Guide</span>
+              </div>
             </div>
             <div className="flex-1 min-h-screen pl-10 pr-6 py-4">
               <Access />
@@ -220,6 +233,25 @@ function UsersIcon(props: any) {
       <circle cx="9" cy="7" r="4" />
       <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  );
+}
+
+function PlayIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polygon points="5,3 19,12 5,21" />
     </svg>
   );
 }

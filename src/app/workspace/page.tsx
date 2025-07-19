@@ -203,7 +203,7 @@ const WorkspacePage: React.FC = () => {
               )}
               <input
                 type="text"
-                className="w-full h-10 vh-5 bg-zinc-900 px-4 hover:shadow-outline focus:outline-none rounded-r text-lg text-gray-600 placeholder-gray-500 font-mono"
+                className="tour-global-search w-full h-10 vh-5 bg-zinc-900 px-4 hover:shadow-outline focus:outline-none rounded-r text-lg text-gray-600 placeholder-gray-500 font-mono"
                 placeholder="Find by Tag, Description , title..."
                 onClick={handleOpen}
               />
@@ -215,13 +215,13 @@ const WorkspacePage: React.FC = () => {
               </div>
               <div className="w-2/12 vh-6 flex justify-between pl-6 items-center">
                 <button
-                  className="bg-blue-600 hover:bg-blue-400 duration-300 rounded-xl text-xl px-3 py-2 mb-2 text-white"
+                  className="tour-snippet-creation bg-blue-600 hover:bg-blue-400 duration-300 rounded-xl text-xl px-3 py-2 mb-2 text-white"
                   onClick={handleAdd}
                 >
                   <IoIosAdd />
                 </button>
                 <button
-                  className="bg-blue-600 hover:bg-blue-400 duration-300 rounded-xl text-xl px-3 py-2 mb-2 text-white"
+                  className="tour-refresh-snippets bg-blue-600 hover:bg-blue-400 duration-300 rounded-xl text-xl px-3 py-2 mb-2 text-white"
                   onClick={toggleRefresh}
                 >
                   <RiRefreshLine />

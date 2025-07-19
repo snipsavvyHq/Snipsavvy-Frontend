@@ -59,7 +59,7 @@ export default function Modal({ fetchWorkspace }: any) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="hover:bg-zinc-600 hover:rounded duration-300 font-bold text-3xl ">
+        <Button className="tour-workspace-creation hover:bg-zinc-600 hover:rounded duration-300 font-bold text-3xl ">
           +
         </Button>
       </DialogTrigger>

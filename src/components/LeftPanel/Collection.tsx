@@ -199,7 +199,7 @@ const Collection = () => {
             <div className="flex justify-between w-full">
               <p className="text-md text-gray-400 font-bold">COLLECTIONS</p>
               <button
-                className="font-extrabold rounded-full text-2xl -mt-1.5  text-gray-400 hover:text-white"
+                className="tour-collection-creation font-extrabold rounded-full text-2xl -mt-1.5  text-gray-400 hover:text-white"
                 onClick={handleAddClick}
               >
                 {showInput ? <FiMinus /> : "+"}
